@@ -28,9 +28,7 @@ jobs:
         pip install -r requirements.txt
     - name: Download chrome
       run: |
-        wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | brew add -
-        brew -y update
-        brew install -y google-chrome-stable
+        brew install --cask google-chrome
     - name: Lint with flake8
       run: |
         flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
