@@ -29,8 +29,8 @@ jobs:
     - name: Download chrome
       run: |
         wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-        apt-get -y update
-        apt-get install -y google-chrome-stable
+        sudo apt-get -y update
+        sudo apt-get install -y google-chrome-stable
     - name: Lint with flake8
       run: |
         flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
