@@ -10,7 +10,7 @@ jobs:
 
   PytestHomework:
     runs-on: macos-latest
-    timeout-minutes: 5
+    timeout-minutes: 10
     steps:
     - uses: actions/checkout@v2
     - name: Extract branch name
@@ -35,4 +35,4 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
-        pytest -s -v -l -n 4
+        pytest -s -v -l -n 2
