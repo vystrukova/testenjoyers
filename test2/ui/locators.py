@@ -16,5 +16,5 @@ class LoginPageLocators(BasePageLocators):
     PIKABU_FORM_LOGIN_BUTTON = (By.XPATH, "(//button[@class='button_success button_width_100']//span[@class='button__title'])[2]")
 
 
-class HomePageLocators(BasePageLocators):
+class MainPageLocators(BasePageLocators):
     PIKABU_LOGOUT_BUTTON = (By.XPATH, "//div[@class='user__info-item user__exit']")
