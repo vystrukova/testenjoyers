@@ -12,10 +12,3 @@ def browser():
     browser.quit()
 
 
-def pytest_configure(config):
-    config.addinivalue_line(
-        "markers", "UI: mark test to run only UI tests"
-    )
-    config.addinivalue_line(
-        "markers", "skip: mark test to skip"
-    )
